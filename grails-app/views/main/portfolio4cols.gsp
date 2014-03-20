@@ -14,10 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    %{--<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/theme.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">--}%
+
+    <r:require module="isotope"/>
 
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -30,7 +32,7 @@
     <div class="wrap">
         <div class="container">
             <div class="row">
-                <div class="span6"><div class="logo"><a href="${createLink(controller: 'main', action: 'index')}"><img src="images/logo.png" alt="" /></a></div></div>
+                <div class="span6"><div class="logo"><a href="${createLink(controller: 'main', action: 'index')}"><img src="${resource(dir:'images', file:'logo.png')}" alt="" /></a></div></div>
                 <div class="span6">
                     <div class="follow_us">
                         <ul>
@@ -114,8 +116,8 @@
                 <div class="projects">
                     <div class="span3 element category01 height_4column" data-category="category01">
                         <div class="hover_img">
-                            <img src="images/portfolio/1.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/1.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'1.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'1.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -125,8 +127,8 @@
                     </div>
                     <div class="span3 element category02 height_4column" data-category="category02">
                         <div class="hover_img">
-                            <img src="images/portfolio/2.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'2.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'2.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -136,8 +138,8 @@
                     </div>
                     <div class="span3 element category03 height_4column" data-category="category03">
                         <div class="hover_img">
-                            <img src="images/portfolio/3.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/3.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'3.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'3.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -147,8 +149,8 @@
                     </div>
                     <div class="span3 element category01 height_4column" data-category="category01">
                         <div class="hover_img">
-                            <img src="images/portfolio/4.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/4.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'4.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'4.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -158,8 +160,8 @@
                     </div>
                     <div class="span3 element category02 height_4column" data-category="category02">
                         <div class="hover_img">
-                            <img src="images/portfolio/5.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/5.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'5.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'5.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -169,8 +171,8 @@
                     </div>
                     <div class="span3 element category03 height_4column" data-category="category03">
                         <div class="hover_img">
-                            <img src="images/portfolio/6.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/6.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'6.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'6.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -180,8 +182,8 @@
                     </div>
                     <div class="span3 element category01 height_4column" data-category="category01">
                         <div class="hover_img">
-                            <img src="images/portfolio/7.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/7.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'7.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'7.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -191,8 +193,8 @@
                     </div>
                     <div class="span3 element category02 height_4column" data-category="category02">
                         <div class="hover_img">
-                            <img src="images/portfolio/8.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/8.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'8.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'8.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -202,8 +204,8 @@
                     </div>
                     <div class="span3 element category03 height_4column" data-category="category03">
                         <div class="hover_img">
-                            <img src="images/portfolio/9.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/9.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'9.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'9.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -213,8 +215,8 @@
                     </div>
                     <div class="span3 element category01 height_4column" data-category="category01">
                         <div class="hover_img">
-                            <img src="images/portfolio/10.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/10.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'10.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'10.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -224,8 +226,8 @@
                     </div>
                     <div class="span3 element category02 height_4column" data-category="category02">
                         <div class="hover_img">
-                            <img src="images/portfolio/11.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/11.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'11.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'11.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -235,8 +237,8 @@
                     </div>
                     <div class="span3 element category03 height_4column" data-category="category03">
                         <div class="hover_img">
-                            <img src="images/portfolio/12.jpg" alt="" />
-                            <span class="portfolio_zoom"><a href="images/portfolio/12.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+                            <img src="${resource(dir:'images/portfolio', file:'12.jpg')}" alt="" />
+                            <span class="portfolio_zoom"><a href="${resource(dir:'images/portfolio', file:'12.jpg')}" rel="prettyPhoto[portfolio1]"></a></span>
                             <span class="portfolio_link"><a href="${createLink(controller: 'main', action: 'singleportfolio')}">View item</a></span>
                         </div>
                         <div class="item_description">
@@ -261,7 +263,7 @@
         <div class="container footer_bord">
             <div class="row">
                 <div class="span3">
-                    <a class="foot_logo" href="${createLink(controller: 'main', action: 'index')}" alt=""><img src="images/foot_logo.png" /></a>
+                    <a class="foot_logo" href="${createLink(controller: 'main', action: 'index')}" alt=""><img src="${resource(dir:'images', file:'foot_logo.png')}" /></a>
                     <p>Vestibulum sem nulla, euismod ac facilisis in, condimentum adipiscing urna. Ut at diam mi.</p>
                     <p>Vivamus sed ligula odio. Vivamus mattis, justo at suscipit malesuada, tortor risus luctus quam, nec roncus nunc lorem a enim. Mauris eget dui tortor. Ut vestibulum metus non</p>
                 </div>
@@ -313,7 +315,7 @@
 </div>
 <!--//footer-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+%{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/superfish.js"></script>
@@ -322,8 +324,8 @@
 <script type="text/javascript" src="js/sorting.js"></script>
 <script type="text/javascript" src="js/jquery.preloader.js"></script>
 <script type="text/javascript" src="js/jquery.tweet.js"></script>
-<script type="text/javascript" src="js/myscript.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="js/myscript.js"></script>--}%
+<r:script type="text/javascript">
     $(document).ready(function(){
         //Image hover
         $(".hover_img").live('mouseover',function(){
@@ -342,6 +344,6 @@
         $(".projects .element").preloader();
 
     });
-</script>
+</r:script>
 </body>
 </html>

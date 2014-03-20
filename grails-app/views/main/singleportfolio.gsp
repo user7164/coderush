@@ -14,10 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    %{--<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/theme.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">--}%
+
+    <r:require module="core"/>
 
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -30,7 +32,7 @@
     <div class="wrap">
         <div class="container">
             <div class="row">
-                <div class="span6"><div class="logo"><a href="${createLink(controller: 'main', action: 'index')}"><img src="images/logo.png" alt="" /></a></div></div>
+                <div class="span6"><div class="logo"><a href="${createLink(controller: 'main', action: 'index')}"><img src="${resource(dir:'images', file: 'logo.png')}" alt="" /></a></div></div>
                 <div class="span6">
                     <div class="follow_us">
                         <ul>
@@ -105,25 +107,25 @@
                     <div id="portfolio_carousel" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="images/portfolio/4.jpg" alt="" />
+                                <img src="${resource(dir:'images/portfolio', file:'4.jpg')}" alt="" />
                             </div>
                             <div class="item">
-                                <img src="images/portfolio/5.jpg" alt="" />
+                                <img src="${resource(dir:'images/portfolio', file:'5.jpg')}" alt="" />
                             </div>
                             <div class="item">
-                                <img src="images/portfolio/6.jpg" alt="" />
+                                <img src="${resource(dir:'images/portfolio', file:'6.jpg')}" alt="" />
                             </div>
                             <div class="item">
-                                <img src="images/portfolio/7.jpg" alt="" />
+                                <img src="${resource(dir:'images/portfolio', file:'7.jpg')}" alt="" />
                             </div>
                             <div class="item">
-                                <img src="images/portfolio/8.jpg" alt="" />
+                                <img src="${resource(dir:'images/portfolio', file:'8.jpg')}" alt="" />
                             </div>
                             <div class="item">
-                                <img src="images/portfolio/9.jpg" alt="" />
+                                <img src="${resource(dir:'images/portfolio', file:'9.jpg')}" alt="" />
                             </div>
                             <div class="item">
-                                <img src="images/portfolio/10.jpg" alt="" />
+                                <img src="${resource(dir:'images/portfolio', file:'10.jpg')}" alt="" />
                             </div>
                         </div>
                         <a class="left carousel-control" href="#portfolio_carousel" data-slide="prev"></a>
@@ -157,7 +159,7 @@
         <div class="container footer_bord">
             <div class="row">
                 <div class="span3">
-                    <a class="foot_logo" href="${createLink(controller: 'main', action: 'index')}" alt=""><img src="images/foot_logo.png" /></a>
+                    <a class="foot_logo" href="${createLink(controller: 'main', action: 'index')}" alt=""><img src="${resource(dir:'images', file: 'foot_logo.png')}" /></a>
                     <p>Vestibulum sem nulla, euismod ac facilisis in, condimentum adipiscing urna. Ut at diam mi.</p>
                     <p>Vivamus sed ligula odio. Vivamus mattis, justo at suscipit malesuada, tortor risus luctus quam, nec roncus nunc lorem a enim. Mauris eget dui tortor. Ut vestibulum metus non</p>
                 </div>
@@ -209,20 +211,20 @@
 </div>
 <!--//footer-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+%{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/superfish.js"></script>
 <script type="text/javascript" src="js/jquery.tweet.js"></script>
 <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="js/myscript.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="js/myscript.js"></script>--}%
+<r:script type="text/javascript">
     $(document).ready(function(){
         //Slider
         $('#portfolio_carousel').carousel({
             pause: 'hover'
         });
     });
-</script>
+</r:script>
 </body>
 </html>

@@ -60,11 +60,11 @@ $(document).ready(function(){
 	});
 			
 	//Twitter Setup
-	$('.tweet_module').tweet({
+	/*$('.tweet_module').tweet({
 		modpath: 'twitter/',
 		count: 2,
 		username : 'your_name'
-	 });
+	 });*/
 	
 	//PrettyPhoto
 	$("a[rel^='prettyPhoto']").prettyPhoto();
