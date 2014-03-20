@@ -30,9 +30,9 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode
 
 ## Directory-based project format
-# .idea/
+.idea/
 # if you remove the above rule, at least ignore user-specific stuff:
-.idea/workspace.xml
+# .idea/workspace.xml
 # .idea/tasks.xml
 # and these sensitive or high-churn files:
 # .idea/dataSources.ids
@@ -41,9 +41,9 @@
 # .idea/dynamic.xml
 
 ## File-based project format
-# *.ipr
-# *.iws
-# *.iml
+*.ipr
+*.iws
+*.iml
 
 ## Additional for IntelliJ
 out/
