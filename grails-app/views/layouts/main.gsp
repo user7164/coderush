@@ -51,30 +51,30 @@
                         <nav id="main_menu">
                             <div class="menu_wrap">
                                 <ul class="nav sf-menu LavaLamp">
-                                    <li class="current"><a href="${createLink(controller: 'main', action: 'index')}">Home</a></li>
-                                    <li><a href="${createLink(controller: 'main', action: 'about')}">About</a></li>
-                                    <li class="sub-menu"><a href="javascript:{}">Features</a>
+                                    <li class="${pageProperty(name:'page.home', default: "")}"><a href="${createLink(controller: 'main', action: 'index')}">Home</a></li>
+                                    <li class="${pageProperty(name:'page.about', default: "")}"><a href="${createLink(controller: 'main', action: 'about')}">About</a></li>
+                                    <li class="sub-menu ${pageProperty(name:'page.features', default: "")}"><a href="javascript:{}">Features</a>
                                         <ul>
-                                            <li><a href="${createLink(controller: 'main', action: 'scaffolding')}"><span>-</span>Scaffolding</a></li>
-                                            <li><a href="${createLink(controller: 'main', action: 'typography')}"><span>-</span>Typography</a></li>
-                                            <li><a href="${createLink(controller: 'main', action: 'shortcodes')}"><span>-</span>Shortcodes</a></li>
-                                            <li><a href="${createLink(controller: 'main', action: 'tables')}"><span>-</span>Tables</a></li>
+                                            <li class="${pageProperty(name:'page.scaffolding', default: "")}"><a href="${createLink(controller: 'main', action: 'scaffolding')}"><span>-</span>Scaffolding</a></li>
+                                            <li class="${pageProperty(name:'page.typography', default: "")}"><a href="${createLink(controller: 'main', action: 'typography')}"><span>-</span>Typography</a></li>
+                                            <li class="${pageProperty(name:'page.shortcodes', default: "")}"><a href="${createLink(controller: 'main', action: 'shortcodes')}"><span>-</span>Shortcodes</a></li>
+                                            <li class="${pageProperty(name:'page.tables', default: "")}"><a href="${createLink(controller: 'main', action: 'tables')}"><span>-</span>Tables</a></li>
                                         </ul>
                                     </li>
-                                    <li class="sub-menu"><a href="javascript:{}">Portfolio</a>
+                                    <li class="sub-menu ${pageProperty(name:'page.portfolio', default: "")}"><a href="javascript:{}">Portfolio</a>
                                         <ul>
-                                            <li><a href="${createLink(controller: 'main', action: 'portfolio2cols')}"><span>-</span>2 Columns</a></li>
-                                            <li><a href="${createLink(controller: 'main', action: 'portfolio3cols')}"><span>-</span>3 Columns</a></li>
-                                            <li><a href="${createLink(controller: 'main', action: 'portfolio4cols')}"><span>-</span>4 Columns</a></li>
+                                            <li class="${pageProperty(name:'page.portfolio2cols', default: "")}"><a href="${createLink(controller: 'main', action: 'portfolio2cols')}"><span>-</span>2 Columns</a></li>
+                                            <li class="${pageProperty(name:'page.portfolio3cols', default: "")}"><a href="${createLink(controller: 'main', action: 'portfolio3cols')}"><span>-</span>3 Columns</a></li>
+                                            <li class="${pageProperty(name:'page.portfolio4cols', default: "")}"><a href="${createLink(controller: 'main', action: 'portfolio4cols')}"><span>-</span>4 Columns</a></li>
                                         </ul>
                                     </li>
-                                    <li class="sub-menu"><a href="javascript:{}">Blog</a>
+                                    <li class="sub-menu ${pageProperty(name:'page.blog', default: "")}"><a href="javascript:{}">Blog</a>
                                         <ul>
-                                            <li><a href="${createLink(controller: 'main', action: 'blog')}"><span>-</span>Blog with right sidebar</a></li>
-                                            <li><a href="${createLink(controller: 'main', action: 'blogpost')}"><span>-</span>Blog post</a></li>
+                                            <li class="${pageProperty(name:'page.blog', default: "")}"><a href="${createLink(controller: 'main', action: 'blog')}"><span>-</span>Blog with right sidebar</a></li>
+                                            <li class="${pageProperty(name:'page.blogpost', default: "")}"><a href="${createLink(controller: 'main', action: 'blogpost')}"><span>-</span>Blog post</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="${createLink(controller: 'main', action: 'contacts')}">Contacts</a></li>
+                                    <li class="${pageProperty(name:'page.contacts', default: "")}"><a href="${createLink(controller: 'main', action: 'contacts')}">Contacts</a></li>
                                 </ul>
                             </div>
                         </nav>

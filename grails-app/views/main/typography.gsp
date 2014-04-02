@@ -28,7 +28,12 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
+
+
 <body>
+
+<content tag="typography">current</content>
+<content tag="features">current</content>
 
 <!--page_container-->
 <div class="page_container">

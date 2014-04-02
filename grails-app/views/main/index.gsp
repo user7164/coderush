@@ -32,7 +32,10 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
+
 <body>
+
+<content tag="home">current</content>
 
 <!--page_container-->
 <div class="page_container">
