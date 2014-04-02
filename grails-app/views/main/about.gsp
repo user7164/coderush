@@ -32,7 +32,7 @@
     <div class="wrap">
         <div class="container">
             <div class="row">
-                <div class="span6"><div class="logo"><a href="${createLink(controller: 'main', view: 'index')}"><img src="${resource(dir:'images', file: 'logo.png')}" alt="" /></a></div></div>
+                <div class="span6"><div class="logo"><a href="${createLink(controller: 'main', action: 'index')}"><img src="${resource(dir:'images', file: 'logo.png')}" alt="" /></a></div></div>
                 <div class="span6">
                     <div class="follow_us">
                         <ul>
@@ -58,30 +58,30 @@
                         <nav id="main_menu">
                             <div class="menu_wrap">
                                 <ul class="nav sf-menu LavaLamp">
-                                    <li><a href="${createLink(controller: 'main', view: 'index')}">Home</a></li>
-                                    <li class="current"><a href="${createLink(controller: 'main', view: 'about')}">About</a></li>
+                                    <li><a href="${createLink(controller: 'main', action: 'index')}">Home</a></li>
+                                    <li class="current"><a href="${createLink(controller: 'main', action: 'about')}">About</a></li>
                                     <li class="sub-menu"><a href="javascript:{}">Features</a>
                                         <ul>
-                                            <li><a href="${createLink(controller: 'main', view: 'scaffolding')}"><span>-</span>Scaffolding</a></li>
-                                            <li><a href="${createLink(controller: 'main', view: 'typography')}"><span>-</span>Typography</a></li>
-                                            <li><a href="${createLink(controller: 'main', view: 'shortcodes')}"><span>-</span>Shortcodes</a></li>
-                                            <li><a href="${createLink(controller: 'main', view: 'tables')}"><span>-</span>Tables</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'scaffolding')}"><span>-</span>Scaffolding</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'typography')}"><span>-</span>Typography</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'shortcodes')}"><span>-</span>Shortcodes</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'tables')}"><span>-</span>Tables</a></li>
                                         </ul>
                                     </li>
                                     <li class="sub-menu"><a href="javascript:{}">Portfolio</a>
                                         <ul>
-                                            <li><a href="${createLink(controller: 'main', view: 'portfolio2cols')}"><span>-</span>2 Columns</a></li>
-                                            <li><a href="${createLink(controller: 'main', view: 'portfolio3cols')}"><span>-</span>3 Columns</a></li>
-                                            <li><a href="${createLink(controller: 'main', view: 'portfolio4cols')}"><span>-</span>4 Columns</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'portfolio2cols')}"><span>-</span>2 Columns</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'portfolio3cols')}"><span>-</span>3 Columns</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'portfolio4cols')}"><span>-</span>4 Columns</a></li>
                                         </ul>
                                     </li>
                                     <li class="sub-menu"><a href="javascript:{}">Blog</a>
                                         <ul>
-                                            <li><a href="${createLink(controller: 'main', view: 'blog')}"><span>-</span>Blog with right sidebar</a></li>
-                                            <li><a href="${createLink(controller: 'main', view: 'blogpost')}"><span>-</span>Blog post</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'blog')}"><span>-</span>Blog with right sidebar</a></li>
+                                            <li><a href="${createLink(controller: 'main', action: 'blogpost')}"><span>-</span>Blog post</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="${createLink(controller: 'main', view: 'contacts')}">Contacts</a></li>
+                                    <li><a href="${createLink(controller: 'main', action: 'contacts')}">Contacts</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -100,7 +100,7 @@
     <div class="wrap">
         <div class="container">
             <div class="breadcrumb">
-                <a href="${createLink(controller: 'main', view: 'index')}">Home</a><span>/</span>About
+                <a href="${createLink(controller: 'main', action: 'index')}">Home</a><span>/</span>About
             </div>
             <section>
                 <div class="row">
@@ -164,63 +164,6 @@
 </div>
 <!--//page_container-->
 
-<!--footer-->
-<div id="footer">
-    <div class="wrap">
-        <div class="container footer_bord">
-            <div class="row">
-                <div class="span3">
-                    <a class="foot_logo" href="${createLink(controller: 'main', view: 'index')}" alt=""><img src="${resource(dir:'images', file: 'foot_logo.png')}" /></a>
-                    <p>Vestibulum sem nulla, euismod ac facilisis in, condimentum adipiscing urna. Ut at diam mi.</p>
-                    <p>Vivamus sed ligula odio. Vivamus mattis, justo at suscipit malesuada, tortor risus luctus quam, nec roncus nunc lorem a enim. Mauris eget dui tortor. Ut vestibulum metus non</p>
-                </div>
-                <div class="span3">
-                    <h2 class="title">Popaular Searches</h2>
-                    <div class="tags">
-                        <a href="javascript:void(0);">960gs</a>
-                        <a href="javascript:void(0);">Responsive</a>
-                        <a href="javascript:void(0);">Blog</a>
-                        <a href="javascript:void(0);">HTML5</a>
-                        <a href="javascript:void(0);">Modern Design</a>
-                        <a href="javascript:void(0);">Picasa</a>
-                        <a href="javascript:void(0);">Pinterest</a>
-                        <a href="javascript:void(0);">Picasa</a>
-                        <a href="javascript:void(0);">Clean Design</a>
-                        <a href="javascript:void(0);">HTML5</a>
-                        <a href="javascript:void(0);">Clean Design</a>
-                        <a href="javascript:void(0);">Blog</a>
-                        <a href="javascript:void(0);">960gs</a>
-                    </div>
-                </div>
-                <div class="span3">
-                    <h2 class="title">Latest tweets</h2>
-                    <!--<ul class="twitter_list tweet_module"></ul>-->
-                    <ul class="twitter_list tweet_module"></ul>
-                </div>
-                <div class="span3">
-                    <h2 class="title">Get in touch!</h2>
-                    <form action="#" method="post">
-                        <input class="span3" type="text" name="name" id="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
-                        <input class="span3" type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
-                        <textarea name="message" id="message" class="span3" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';" >Message</textarea>
-                        <div class="clear"></div>
-                        <input type="submit" class="btn send_btn" value="Send" />
-                        <div class="clear"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer_bottom">
-        <div class="wrap">
-            <div class="container">
-                <div class="copyright">Hend of Hope &copy; 2020  |  <a href="javascript:void(0);">Privacy Policy</a></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--//footer-->
 
 %{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
