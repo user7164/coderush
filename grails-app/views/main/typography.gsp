@@ -14,12 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    %{--<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/theme.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/docs.css" rel="stylesheet">
-    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">--}%
 
     <r:require module="prettify"/>
 
@@ -327,14 +321,5 @@
 </div>
 <!--//page_container-->
 
-%{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="js/google-code-prettify/prettify.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/superfish.js"></script>
-<script type="text/javascript" src="js/jquery.tweet.js"></script>
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="js/myscript.js"></script>
-<script src="js/application.js"></script>--}%
 </body>
 </html>

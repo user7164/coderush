@@ -15,11 +15,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    %{--<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/theme.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">--}%
-
     <r:require module="isotope"/>
 
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
@@ -128,17 +123,6 @@
 
 </div>
 <!--//page_container-->
-
-%{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/superfish.js"></script>
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/sorting.js"></script>
-<script type="text/javascript" src="js/jquery.preloader.js"></script>
-<script type="text/javascript" src="js/jquery.tweet.js"></script>
-<script type="text/javascript" src="js/myscript.js"></script>--}%
 
 <r:script type="text/javascript">
     $(document).ready(function(){

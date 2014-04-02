@@ -17,9 +17,6 @@
 
     <r:require module="core"/>
 
-    %{--<link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/theme.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">--}%
 
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -99,15 +96,7 @@
         </div>
     </div>
 </div>
-<!--//page_container-->
+<!--page_container-->
 
-
-%{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/superfish.js"></script>
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="js/jquery.tweet.js"></script>
-<script type="text/javascript" src="js/myscript.js"></script>--}%
 </body>
 </html>
