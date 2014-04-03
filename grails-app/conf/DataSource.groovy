@@ -24,7 +24,26 @@ environments {
         }
     }
     production {
+
         dataSource {
+            pooled = true
+            driverClassName = "org.postgresql.Driver"
+            dialect = 'org.hibernate.dialect.PostgreSQLDialect'
+            dbCreate = "create-drop"
+            url = "jdbc:postgresql://localhost:5432/coderush"
+            username = "postgres"
+            password = "123456"
+        }
+
+        hibernate {
+            cache.use_second_level_cache = true
+            cache.use_query_cache = true
+            cache.provider_class = 'org.hibernate.cache.EhCacheProvider'
+            /*cache.use_query_cache = false
+            cache.region.factory_class = 'net.sf.ehcache.hibernate.EhCacheRegionFactory'*/
+        }
+
+        /*dataSource {
             dbCreate = "update"
             url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
             pooled = true
@@ -38,6 +57,6 @@ environments {
                testOnReturn=true
                validationQuery="SELECT 1"
             }
-        }
+        }*/
     }
 }

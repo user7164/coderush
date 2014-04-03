@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <r:require modules="jquery,prettify"/>
+    <r:require modules="prettify"/>
 
     <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
