@@ -29,7 +29,7 @@ environments {
             pooled = true
             driverClassName = "org.postgresql.Driver"
             dialect = 'org.hibernate.dialect.PostgreSQLDialect'
-            dbCreate = "create-drop"
+            dbCreate = "update"
             url = "jdbc:postgresql://localhost:5432/coderush"
             username = "postgres"
             password = "123456"

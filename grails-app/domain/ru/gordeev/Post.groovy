@@ -6,6 +6,7 @@ class Post {
     String content
     //String author
     String tags
+    String comments
     Date   creationDate
 
     static belongsTo = [author: Author]

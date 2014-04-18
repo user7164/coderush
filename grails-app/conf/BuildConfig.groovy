@@ -56,8 +56,10 @@ grails.project.dependency.resolution = {
 
         build ":tomcat:$grailsVersion"
 
-        runtime ":database-migration:1.3.2"
+        //runtime ":database-migration:1.3.2"
 
         compile ':cache:1.0.1'
+
+        runtime ":database-migration:1.3.8"
     }
 }
